@@ -1,4 +1,4 @@
-package comp127;
+package Basicjava;
 
 public class BasicStuff {
 
