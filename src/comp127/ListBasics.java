@@ -95,6 +95,7 @@ public class ListBasics {
 
         String singleMagicWord = magicWords.get(1);
         System.out.println("singleMagicWord = " + singleMagicWord);
+        magicWords.
 
         // In this context, we call the number 1 the “index.” An index is a
         // number that identifies a position in a list. (Note that the plural of
