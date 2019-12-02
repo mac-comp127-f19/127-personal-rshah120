@@ -19,7 +19,7 @@ public class UppercaseFirstLetter {
      */
     public static String uppercaseFirstLetter(String input) {
         if (input.length() > 1) {
-            String newInput = input.substring(0,1).toUpperCase() + input.substring(1,input.length());
+            String newInput = input.substring(0,1).toUpperCase() + input.substring(input.length());
             return newInput;
         }
         else {
@@ -33,10 +33,35 @@ public class UppercaseFirstLetter {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter something you would like to modify: ");
+//        System.out.println("Enter something you would like to modify: ");
+//
+//        String input = scan.next();
+//
+//        System.out.println(uppercaseFirstLetter(input));
+//        System.out.println(sillyCategorize("Bianca", 1234));
+//        System.out.println(sillyCategorize("Joe", 3));
 
-        String input = scan.next();
+        System.out.println("Printing " + 10 + " B/W and " + 2 + " color jobs");
 
-        System.out.println(uppercaseFirstLetter(input));
     }
+
+    public static String sillyCategorize(String word, int number) {
+        if (word.equals("Gary")) {
+            if (number == 1) {
+                return "blue";
+            }
+            else if (number == 3) {
+                return "green";
+            }
+        }
+        else if(word.equals("Bianca")) {
+            return "white";
+        }
+        else if(number == 3 || number == 6) {
+            return "ruby";
+        }
+        return "red";
+    }
+
 }
+
